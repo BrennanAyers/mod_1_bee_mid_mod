@@ -7,5 +7,17 @@ class Student
     @scores = []
   end
 
+  def log_score(score)
+    @scores << score
+  end
+
+  def grade
+    total = 0
+    @scores.each do |score|
+      total += score
+    end
+
+    total / @scores.length.to_f
+  end
 
 end
