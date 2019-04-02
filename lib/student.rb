@@ -8,16 +8,16 @@ class Student
   end
 
   def log_score(score)
-    @scores << score
+    scores << score
   end
 
   def grade
     total = 0
-    @scores.each do |score|
+    scores.each do |score|
       total += score
     end
 
-    total / @scores.length.to_f
+    total / scores.length.to_f
   end
 
 end
