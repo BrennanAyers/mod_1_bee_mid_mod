@@ -11,4 +11,8 @@ class Course
     true if students.count >= capacity
   end
 
+  def enroll(student)
+    students << student
+  end
+
 end
